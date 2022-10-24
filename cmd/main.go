@@ -15,7 +15,7 @@ func main() {
 		return nil
 	})
 
-	app.Dao()
+	app.Dao().FindUserById()
 
 	if err := app.Start(); err != nil {
 		log.Fatal(err)
